@@ -25,15 +25,18 @@ randy: $(rand).o
 
 #checks to see if a .o file of logConversion is created
 $(log).o: $(log.c)
-	$(CC) $(CFLAGS) -c $(log).c
+	@$(CC) $(CFLAGS) -c $(log).c
 
 #checks to see if a .o file of trig is created
 trig.o: trig.c
-	$(CC) $(CFLAGS) -c trig.c
+	@$(CC) $(CFLAGS) -c trig.c
 
 #checks to see if a .o file of randRange is created
 $(rand).o: $(rand).c
-	$(CC) $(CFLAGS) -c $(rand).c
+	@$(CC) $(CFLAGS) -c $(rand).c
+
+#runs the clean, install and package commands
+.PHONY: clean install package
 
 #removes all .o files
 clean:
@@ -41,14 +44,13 @@ clean:
 
 #installs the files
 install:
-	mv loggy /usr/local/bin/
+	mv logConversion.c /workspaces/cmpt201/lab02/bin
+	mv trig.c /workspaces/cmpt201/lab02/bin
+	mv randRange.c /workspaces/cmpt201/lab02/bin
 
 #creates the program as a zip folder
 package:
 	tar -czf tarAndcompress.tar.gz *.c *.h Makefile
-
-#runs the clean, install and package commands
-.PHONY: clean install package
 
 %.o: %.c
 	$(CC) $(CFLAGS) -c $< -o $@
