@@ -1,7 +1,8 @@
 /* 
 Author: Jeffrey Moniz
 Lab03
-This program takes a user input and will return the ASCII of the input */
+This program takes a user input and will return the ASCII of the input 
+*/
 
 #include<stdio.h>
 int main(void) 
