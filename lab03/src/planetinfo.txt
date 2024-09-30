@@ -1,0 +1,9 @@
+planet, Mass [kg], Radius [km]
+Mercury, 3.3020e+23, 2.4e+06
+venus, 8.6850e+27, 6.1e+06
+earth, 5.9736e+24, 6.4e+06
+mars, 6.4185e+23, 3.4e+06
+jupiter, 1.8986e+27, 7.1e+07
+saturn, 5.6846e+26, 6.0e+07
+uranus, 8.6832e+25, 2.6e+07
+neptune, 1.0243e+26, 2.5e+07

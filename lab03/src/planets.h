@@ -1,9 +1,7 @@
 #include<math.h>
 #include<stdio.h>
 
-#define mercuryMass 500.0
-
-#define mercuryRad 300.0
+#define mercuryMass  0.3302e24
 
 #define venusMass 8685e24
 
@@ -18,6 +16,8 @@
 #define uranusMass  86.832e24
 
 #define neptuneMass 102.43e24
+
+#define mercuryRad 2439.7e3
 
 #define venusRad 6051.8e3
 
