@@ -3,7 +3,7 @@ ascii:
 	@gcc ascii.c -o ascii
 	@./ascii
 
-gravity:
+gravity mercury 5:
 	@gcc gravity.c
-	@gcc gravity.c -o gravity
-	@./gravity
+	@gcc gravity.c -Wall -o gravity
+	@./gravity mercury 5
