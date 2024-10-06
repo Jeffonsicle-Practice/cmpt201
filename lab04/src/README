@@ -1,0 +1,14 @@
+#DESCRIPTION
+Solutions for lab04
+has files checkFilename.c, checkformat.c, contains.c and Makefile
+checkFilename.c will make sure that the filename is in the correct format
+checkformat.c will check the format of a file
+and contains.c will check the ascii characters of the given string
+#AUTHOR
+Name: Jeffrey Moniz
+Email: monizj4@mymacewan.ca
+#INSTALLATION
+#BUGS
+#CONTRIBUTE
+#CREDITS
+#LICENSE

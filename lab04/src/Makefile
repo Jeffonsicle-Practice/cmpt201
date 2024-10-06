@@ -26,4 +26,4 @@ clean:
 
 #creates the program as a zip folder
 package:
-	tar -czf cmpt201_lab04_JM.tar.gz *.c *.h Makefile
+	@tar -czf cmpt201_lab04_JM.tar.gz *.c *.h Makefile README
