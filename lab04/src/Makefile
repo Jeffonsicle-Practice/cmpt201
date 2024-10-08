@@ -22,7 +22,7 @@ contains: contains.o
 
 #clean the folder by removing the .o files, and the executable files
 clean:
-	@rm -r *.o checkFilename checkformat contains
+	@rm -r *.o checkFilename checkformat contains 
 
 #creates the program as a zip folder
 package:
