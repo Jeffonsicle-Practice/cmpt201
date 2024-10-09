@@ -1,1 +1,1 @@
-holiday, duck, japan, car, bus, lion, cat, dog, horse, monkey
+holiday,duck,japan,car,bus,lion,cat,dog,horse,monkey

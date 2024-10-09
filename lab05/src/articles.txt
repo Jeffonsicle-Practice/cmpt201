@@ -1,1 +1,1 @@
-a, an, the, she, he, they
+a,an,the,she,he,they
