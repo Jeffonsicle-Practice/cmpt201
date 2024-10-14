@@ -1,5 +1,10 @@
 #DESCRIPTION
 Solutions for lab05
+has c files base2dec.c, lawn.c, randomSentence.c and strlength.c
+base2dec.c takes a base and power and prints the sum of the base and power
+lawn.c prints the ln calculation of a number between 0 and 1
+randomSentence.c produces a random sentence given multiple text files
+strlength.c produces the length of a given string
 #AUTHOR
 Name: Jeffrey Moniz
 Email: monizj4@mymacewan.ca
