@@ -1,3 +1,4 @@
+//directives
 #include<stdio.h>
 #include<string.h>
 #include<ctype.h>
@@ -6,16 +7,24 @@
 
 int main(int argc, char* argv[])
 {
+    /*
+    this main function takes 2 arguments, a base and a power and takes the sum of the base and power.
+    the program then prints the sum
+    */
+
+    //initialize sum, base and power
     int sum = 0;
     int base = atoi(argv[2]);
     int power = strlen(argv[1])-1;
 
+    //error checks and makes sure that there are only 3 arguments including the file name
     if(argc > 3)
     {
         printf("too many arguments!\n");
         return 1;
     }
 
+    //takes the sum of the base and power
     for(int i= 0; i < strlen(argv[1]); i++)
     {
 
@@ -31,7 +40,9 @@ int main(int argc, char* argv[])
         }
     }
 
+    //prints the sum
     printf("%d\n",sum);
 
+    //exits the program
     return 0;
 }
