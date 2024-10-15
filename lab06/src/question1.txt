@@ -1,0 +1,30 @@
+Code          | Question               | Answer                          |
+-------------------------------------------------------------------------|
+char a = ’Q’; | What does *ap contain? |  *ap contains the letter 'Q'    |
+int b;        | What does b contain ?  |  and b contains the address of  |
+char* ap;     |                        |  char a                         |
+ap = a;       |                        |                                 |
+b = &a;       |                        |                                 |
+-------------------------------------------------------------------------|
+char q[]="goose"; | *r contain [1st]?  | *r and *s at 1st have the       |
+char *r,*s;       | *s contain [1st]?  | character g. *r and *s at 2nd   |
+r=&q[0];          |                    | contains the character o        |
+s=q;              | *r contain [2nd]?  |                                 |
+r++;              | *s contain [2nd]?  |                                 |
+s+=2;             |                    |                                 |
+-------------------------------------------------------------------------|
+double a = 3.14;  |Difference between *ap in |double *ap initializes the |
+double b;         | "double *ap" and "b=*ap"?|adress while b = *ap gives |
+double *ap;       |                          |b the address of *ap.      |
+ap = &a;          |What doe the %p represent?|                           |
+b = *ap;          |                          |%p prints the pointer to   |
+printf("%p\n",ap);|                          |screen                     |
+-------------------------------------------------------------------------|
+#define NUL ’\0’  | What is the difference   |both NUL and NULL represent|
+char a = NUL;     | between NUL and NULL?    |the same concept however   |
+char b = NULL;    |                          |NULL is macro and NUL      |
+                  | Purpose of NULL?         |represents the first ascii |
+                  |                          |character value.           |
+                  |                          |NULL initializes the b     |
+                  |                          |pointer value              | 
+-------------------------------------------------------------------------|
