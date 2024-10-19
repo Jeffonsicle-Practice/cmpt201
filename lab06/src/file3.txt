@@ -1,0 +1,3 @@
+station: 4445
+pressure [kPa] : 666.78
+Temperature [C]: -47.3
