@@ -21,7 +21,7 @@ loadData: loadData.o
 #makes the .PHONY which cleans and makes the package
 .PHONY: clean package
 
-#removes the .o files and the executable files for strlength, lawn, base2dec and randomSentence
+#removes the .o files and the executable files for sec2hms, stats and loadData
 clean:
 	@rm -rf *.o sec2hms stats loadData
 
