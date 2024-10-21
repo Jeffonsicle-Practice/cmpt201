@@ -2,13 +2,15 @@
 GCC = gcc 
 CFLAGS = -Wall -std=c11
 
-#makes the executable file randomSentence
+#makes the executable file sec2hms
 sec2hms: sec2hms.o
 	@$(GCC) $(CFLAGS) -o $@ $^
 
+#makes the executable file stats
 stats: stats.o
 	@$(GCC) $(CFLAGS) -o $@ $^
 
+#makes the executable file loadData
 loadData: loadData.o
 	@$(GCC) $(CFLAGS) -o $@ $^
 
@@ -25,4 +27,4 @@ clean:
 
 #creates the program as a zip folder
 package:
-	@tar -czf cmpt201_lab05_JM.tar.gz *.c *.h *.txt Makefile README
+	@tar -czf cmpt201_lab06_JM.tar.gz *.c *.h *.txt Makefile README
