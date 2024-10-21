@@ -1,21 +1,63 @@
+#include<stdio.h>
+#include<stdlib.h>
 
-
-int c
+int loadData(char* filename, int* stationNumber, double* temp, double* pres)
 {
-    //bob
-}
+    FILE *fp;
 
-int main(void)
-{
-    FILE *fp1, *fp2. *fp3;
+    fp = fopen(filename, "r");
 
-    fp1 = fopen("file1.txt", "r");
-    fp2 = fopen("file2.txt", "r");
-    fp3 = fopen("file3.txt", "r");
-
-    if(fp1 == NULL || fp2 == NULL || fp3 == NULL)
+    if(fp == NULL)
     {
         printf("file does not exist\n");
         return 1;
     }
+
+    if(fscanf(fp, "station: %d\n",stationNumber) != 1 || fscanf(fp, "pressure [kPa] : %lf\n",pres) != 1 || fscanf(fp, "Temperature [C]: %lf\n",temp) != 1)
+    {
+        fclose(fp);
+        return 1;
+    }
+
+    fclose(fp);
+    return 0;
+}
+
+int main(void)
+{
+    int stationNum;
+    double temp, pres;
+
+    if(loadData("file1.txt",&stationNum,&temp,&pres) == 0)
+    {
+        printf("data loaded successfully: %d, %lf, %lf\n",stationNum,temp,pres);
+    }
+    else
+    {
+        printf("error loading data from file1.txt\n");
+    }
+
+    printf("\n");
+
+    if(loadData("file2.txt",&stationNum,&temp,&pres) == 0)
+    {
+        printf("data loaded successfully: %d, %lf, %lf\n",stationNum,temp,pres);
+    }
+    else
+    {
+        printf("error loading data from file2.txt\n");
+    }
+
+    printf("\n");
+
+    if(loadData("file3.txt",&stationNum,&temp,&pres) == 0)
+    {
+        printf("data loaded successfully: %d, %lf, %lf\n",stationNum,temp,pres);
+    }
+    else
+    {
+        printf("error loading data from file3.txt\n");
+    }
+
+    return 0;
 }
