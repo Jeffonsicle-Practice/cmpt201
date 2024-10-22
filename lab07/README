@@ -1,0 +1,14 @@
+#DESCRIPTION
+Solutions for lab06
+has c files loadData.c, sec2hms.c, stats.c, question1.txt, and multiple txt files 
+stats.c checks an arrays values and prints the minimum value, max value and the mean value using pointers
+sec2hms.c takes a value and converts it into hours, minutes and seconds
+loadData.c takes a file and checks its format. it then takes the station number, temp and pressure and prints it
+#AUTHOR
+Name: Jeffrey Moniz
+Email: monizj4@mymacewan.ca
+#INSTALLATION
+#BUGS
+#CONTRIBUTE
+#CREDITS
+#LICENSE
