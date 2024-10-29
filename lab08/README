@@ -1,0 +1,12 @@
+#DESCRIPTION
+Solutions for lab08
+math.c calculates the distance between two x,y,z set values using dynamic memory allocation
+data.dat has the information for the math.c program
+#AUTHOR
+Name: Jeffrey Moniz
+Email: monizj4@mymacewan.ca
+#INSTALLATION
+#BUGS
+#CONTRIBUTE
+#CREDITS
+#LICENSE
